@@ -1,0 +1,38 @@
+{
+  "name": "chat",
+  "version": "1.0.0",
+  "description": "Angular 1 playing",
+  "main": "index.js",
+  "scripts": {
+    "build": "rimraf dist && webpack --bail --progress --profile",
+    "server": "webpack-dev-server --history-api-fallback --inline --progress",
+    "test": "karma start",
+    "test-watch": "karma start --auto-watch --no-single-run",
+    "start": "npm run server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ccorcoveanu-silly/chat.git"
+  },
+  "author": "Cristi Corcoveanu <cristi.corcoveanu@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ccorcoveanu-silly/chat/issues"
+  },
+  "homepage": "https://github.com/ccorcoveanu-silly/chat#readme",
+  "devDependencies": {
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.14.0",
+    "copy-webpack-plugin": "^3.0.1",
+    "html-webpack-plugin": "^2.22.0",
+    "raw-loader": "^0.5.1",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.15.0"
+  },
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-animate": "^1.5.8",
+    "angular-toastr": "^2.1.1"
+  }
+}
