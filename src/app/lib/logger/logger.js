@@ -1,14 +1,6 @@
-import angular from 'angular'
+// Logger that maps over toastr.
+// We could implement extra logic on errors
 
-const logger = (toastr) => {
-  return {
-    success: function(text) {
-      return toastr.success(text, 'Success')
-    }
-  }
-}
-
-angular.module('app_lib_logger', [])
-  .service('logger', logger)
-
-export default 'app_lib_logger'
+export default ['toastr', (toastr) => ({
+  success: (text) => toastr.success(text, 'Success')
+})]
